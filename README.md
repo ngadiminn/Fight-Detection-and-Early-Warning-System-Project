@@ -1,4 +1,4 @@
-# 🚨 Fight Detection & Early Warning System (CCTV Surveillance)
+# Fight Detection & Early Warning System (CCTV Surveillance)
 
 Sistem deteksi perkelahian / tindak kekerasan secara *real-time* berbasis CCTV dan kecerdasan buatan (*Computer Vision*) menggunakan arsitektur **Multiscale Vision Transformers (MViT-v2-S)**, terintegrasi dengan **Early Warning System (ESP32 Actuator/Alarm)** serta notifikasi otomatis ke **Telegram Bot**.
 
@@ -6,12 +6,12 @@ Sistem deteksi perkelahian / tindak kekerasan secara *real-time* berbasis CCTV d
 
 ## 📌 Fitur Utama
 
-- **🧠 Deep Learning Video Classification**: Menggunakan model `MViT_v2_s` (*Multiscale Vision Transformer*) yang di-fine-tune untuk mendeteksi aksi perkelahian (*fight vs no-fight*) dari urutan frame video (sequence clips).
-- **📹 Real-Time RTSP CCTV Streaming**: Mendukung pemrosesan langsung dari feed IP Camera (RTSP stream) maupun file video lokal/webcam.
-- **🖥️ Modern GUI Dashboard**: Dibangun menggunakan `CustomTkinter` dengan visualisasi status stream, grafik probabilitas, log aktivitas, dan auto-capture bukti kejadian.
-- **🔔 Telegram Bot Alerting**: Pengiriman notifikasi darurat secara instan beserta foto snapshot kejadian saat terdeteksi perkelahian.
-- **⚡ IoT Early Warning Trigger**: Integrasi komunikasi HTTP/WiFi ke modul **ESP32** untuk menyalakan aktuator fisik (sirine / buzzer / lampu peringatan / relay).
-- **📊 Riwayat & Evaluasi Lengkap**: Disertai notebook visualisasi metrik evaluasi, confusion matrix eksternal, dan grafik pelatihan.
+- **Deep Learning Video Classification**: Menggunakan model `MViT_v2_s` (*Multiscale Vision Transformer*) yang di-fine-tune untuk mendeteksi aksi perkelahian (*fight vs no-fight*) dari urutan frame video (sequence clips).
+- **Real-Time RTSP CCTV Streaming**: Mendukung pemrosesan langsung dari feed IP Camera (RTSP stream) maupun file video lokal/webcam.
+- **Modern GUI Dashboard**: Dibangun menggunakan `CustomTkinter` dengan visualisasi status stream, grafik probabilitas, log aktivitas, dan auto-capture bukti kejadian.
+- **Telegram Bot Alerting**: Pengiriman notifikasi darurat secara instan beserta foto snapshot kejadian saat terdeteksi perkelahian.
+- **IoT Early Warning Trigger**: Integrasi komunikasi HTTP/WiFi ke modul **ESP32** untuk menyalakan aktuator fisik (sirine / buzzer / lampu peringatan / relay).
+- **Riwayat & Evaluasi Lengkap**: Disertai notebook visualisasi metrik evaluasi, confusion matrix eksternal, dan grafik pelatihan.
 
 ---
 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Cara Menjalankan Sistem
+## 🖥️ Cara Menjalankan Sistem
 
 ### Menjalankan Dashboard GUI Utama
 Pastikan konfigurasi RTSP stream CCTV, IP ESP32, serta token Telegram pada `main_gui_app.py` sudah sesuai dengan jaringan Anda, lalu jalankan:
@@ -104,5 +104,5 @@ Evaluasi model MViT menghasilkan akurasi dan ketahanan deteksi yang tinggi pada 
 
 ---
 
-## 👥 Kontributor & Lisensi
+## Kontributor & Lisensi
 Dikembangkan oleh **ngadiminn**. Proyek ini ditujukan untuk kebutuhan riset pengawasan keamanan cerdas dan deteksi aksi kekerasan publik.
